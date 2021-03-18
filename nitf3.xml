@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nitf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://iptc.org/std/NITF/2006-10-18/ nitf-3-6.xsd"
+ xmlns="http://iptc.org/std/NITF/2006-10-18/"
+ xmlns:xhtml="http://xhtml.example.org"
+ xmlns:stuart="http://stuart.example.org"
+ xmlns:georss="http://georss.example.org"
+ xmlns:nar="http://iptc.example.org"
+ xmlns:per="http://person.example.net"
+ version="-//IPTC//DTD NITF 3.6//EN">
+    <head>
+        <docdata>
+            <doc-id regsrc="EP"/>
+            <date.issue norm="<%= datePublished %>>"/>
+            <doc.rights owner="http://press.example.org" agent="http://license.example.net" type="none"/>
+            <doc.copyright holder="<%= copyrightHolder %>" year="<%= copyrightYear %>"/>
+        </docdata>
+    </head>
+    <body>
+        <body.head>
+            <hedline>
+                <hl1 id="headline"><%= articleTitle %></hl1>
+            </hedline>
+            <byline><%= byline %></byline>
+            <distributor />
+            <dateline />
+        </body.head>
+        <body.content>
+            <%= text %>
+        </body.content>
+        <body.end/>
+    </body>
+</nitf>

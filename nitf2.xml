@@ -1,0 +1,27 @@
+<nitf version="-//IPTC-NAA//DTD NITF-XML 2.0s//EN" change.date="29 March 2000" change.time="1900">
+    <head>
+      <title/>
+      <docdata/>
+      <pubdata type="web" issue="1" date.publication="<%= datePublished %>" position.section="<%= section %>" edition.name="The Economist online" />
+    </head>
+    <body>
+      <body.head>
+        <hedline>
+          <hl1><%= articleTitle %></hl1>
+          <hl2><%= description %></hl2>
+        </hedline>
+        <dateline>
+          <location/>
+        </dateline>
+        <abstract>
+          <hl2><%= articleTitle %></hl2>
+          <p><%= description %></p>
+        </abstract>
+      </body.head>
+      <body.content>
+        <p class="rubric"><%= description %></p>
+        <%= text %>
+      </body.content>
+      <body.end/>
+    </body>
+  </nitf>

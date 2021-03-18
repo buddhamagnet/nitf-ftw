@@ -1,0 +1,23 @@
+{
+  "name": "syndication-nitf",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "nitf2": "ts-node index.ts",
+    "nitf3": "VERSION=3 ts-node index.ts"
+  },
+  "keywords": [
+    "typescript",
+    "nift",
+    "decimate"
+  ],
+  "author": "buddhamagnet",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6"
+  },
+  "devDependencies": {
+    "@types/ejs": "^3.0.6",
+    "@types/node": "^14.14.35"
+  }
+}
